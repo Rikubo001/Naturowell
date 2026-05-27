@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-navy font-sans antialiased selection:bg-brand-navy selection:text-brand-cream;
+  }
+}
+
+/* Custom Pop Wellness Design Tokens */
+.border-navy-pop {
+  border: 3px solid #2B2D42;
+}
+
+.btn-retro-pop {
+  background-color: #FFD166;
+  color: #2B2D42;
+  border: 3px solid #2B2D42;
+  border-radius: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 4px 4px 0px #2B2D42;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-retro-pop:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px #2B2D42;
+  background-color: #FFE066;
+}
+
+.btn-retro-secondary {
+  background-color: transparent;
+  color: #2B2D42;
+  border: 3px solid #2B2D42;
+  border-radius: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-retro-secondary:hover {
+  background-color: rgba(43, 45, 66, 0.05);
+}
+
+.card-retro-pop {
+  background-color: #FAF3DD;
+  border: 3px solid #2B2D42;
+  border-radius: 16px;
+  box-shadow: 6px 6px 0px #2B2D42;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.card-retro-pop:hover {
+  transform: translateY(-4px);
+  box-shadow: 8px 8px 0px #2B2D42;
+}
+
+.badge-pop {
+  background-color: #CDB4DB;
+  color: #2B2D42;
+  border: 2px solid #2B2D42;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+}
